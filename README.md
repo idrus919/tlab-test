@@ -1,16 +1,10 @@
-# tlab_test
+# IMDB Popular Films
 
-A new Flutter project.
+Branch:\
+**Develop**
 
-## Getting Started
+Apk:\
+https://drive.google.com/file/d/1jGQ-6UK4sXFl_znf6kweaPHTFY-cfFIR/view?usp=sharing
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Screenshot:\
+![Screenshot_1689223246](https://github.com/idrus919/tlab-test/assets/42400101/14b4351f-98cd-480f-b953-56baf2dffaa1)
