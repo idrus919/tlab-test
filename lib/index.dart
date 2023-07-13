@@ -11,13 +11,16 @@ class MyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('IMDB Popular Films'),
+        title: Text(
+          'IMDB Popular Films',
+          style: Get.textTheme.titleLarge?.copyWith(color: neutralColor),
+        ),
+        elevation: 0,
+        backgroundColor: primaryColor,
       ),
       body: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
-            child: _buildList,
-          ),
+          SliverToBoxAdapter(child: _buildList),
           const SliverToBoxAdapter(
             child: SafeArea(child: SizedBox()),
           ),
@@ -53,6 +56,9 @@ class MyPage extends StatelessWidget {
                   height: 50,
                   fit: BoxFit.cover,
                   errorWidget: (context, url, error) {
+                    return const Icon(Icons.image);
+                  },
+                  placeholder: (context, url) {
                     return const Icon(Icons.image);
                   },
                 ),
