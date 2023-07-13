@@ -75,9 +75,19 @@ class MyPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                Icon(
-                  Icons.arrow_downward,
-                  color: up ? Colors.green : Colors.red,
+                Builder(
+                  builder: (context) {
+                    if (up) {
+                      return const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      );
+                    }
+                    return const Icon(
+                      Icons.arrow_upward,
+                      color: Colors.green,
+                    );
+                  },
                 ),
               ],
             ),
