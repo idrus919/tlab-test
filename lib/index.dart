@@ -43,7 +43,6 @@ class MyPage extends StatelessWidget {
           final movie = movies[index];
           final rankUpDown = movie?.rankUpDown ?? '';
           final up = rankUpDown.contains('+');
-          final down = rankUpDown.contains('-');
 
           return Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
