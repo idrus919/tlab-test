@@ -79,13 +79,13 @@ class MyPage extends StatelessWidget {
                   builder: (context) {
                     if (up) {
                       return const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_upward,
                         color: Colors.green,
                       );
                     }
                     return const Icon(
-                      Icons.arrow_upward,
-                      color: Colors.green,
+                      Icons.arrow_downward,
+                      color: Colors.red,
                     );
                   },
                 ),
