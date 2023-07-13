@@ -41,6 +41,9 @@ class MyPage extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           final movie = movies[index];
+          final rankUpDown = movie?.rankUpDown ?? '';
+          final up = rankUpDown.contains('+');
+          final down = rankUpDown.contains('-');
 
           return Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -72,6 +75,10 @@ class MyPage extends StatelessWidget {
                       Text(movie?.imDbRating ?? ''),
                     ],
                   ),
+                ),
+                Icon(
+                  Icons.arrow_downward,
+                  color: up ? Colors.green : Colors.red,
                 ),
               ],
             ),
